@@ -35,13 +35,17 @@
 <body>
 
   <div id="app">
-    <!-- <button ion-button @click="useVanillaJsService">
-      Use Vanilla JavaScript Service
-    </button> -->
-    <!-- <first-component></first-component>
-    <second-component></second-component> -->
-    <component-one></component-one> 
-    <component-two></component-two>
+    <!-- <div v-custom-show='false'>
+      Custom Show
+    </div> -->
+
+    <!-- <div v-custom-show="{ display: false, delay: 4000 }">
+      Custom Show
+    </div> -->
+    
+    <div v-custom-if:4000 :display='false'>
+      Custom If
+    </div>
   </div>
 
   <!-- The polyfills js is generated during the build process -->
